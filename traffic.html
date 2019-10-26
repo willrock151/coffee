@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>東山咖啡</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/coffee.css">
+    <link rel="stylesheet" href="./css/animate.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/coffee.png" alt="" width="30" height="30">
+                東山咖啡
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> 首頁 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spot.html"><i class="fas fa-tree"></i> 景點介紹</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="traffic.html"><i class="fas fa-car"></i> 交通位置 <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 計算內容區的最小高度 = 100vh - nav高 - footer高 - 內容區的上下margin -->
+    <div class="container my-5" style="min-height: calc(100vh - 59px - 50px - 6rem);">
+        <div class="row">
+            <div class="col-12 fadeIn wow">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.563399625907!2d120.4832490153569!3d23.258969613287142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e8b7edaab6bcd%3A0x4397d99015686a96!2zMTc15ZKW5ZWh5YWs6Lev!5e0!3m2!1szh-TW!2stw!4v1571453199134!5m2!1szh-TW!2stw" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="col-12 text-white my-3 bounceIn wow">
+                <h2 style="color:aqua">交通資訊</h2>
+                <p  style="color:yellow">【大眾運輸】</p>
+                台鐵<br>
+                搭乘台鐵至新營火車站下→轉搭(新營→青山)的新營客運至青山站下車→轉搭計程車→經關子嶺175縣道(9~21公里處)→即可達東山咖啡公路<br>
+                <br>
+                <p  style="color:yellow">【自行開車】</p>
+                1.國道3號白河交流道下→轉172縣道→經關子嶺175縣道(9~21公里處)→即可達東山咖啡公路<br>
+                2.國道3號六甲交流道下→轉174縣道→經關子嶺175縣道(9~21公里處)→即可達東山咖啡公路<br>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 align-self-center">
+                    <h5 class="text-white text-center">&copy;2019 泰山職訓</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
